@@ -23,7 +23,7 @@ public class Menu {
 		double total = 0.0;
 		System.out.println("Type something not on the menu to complete your order!");
 		while (true) {
-			System.out.print("What would you like to order?");
+			System.out.print("What would you like to order? >> ");
 			String order = in.nextLine();
 			if (isItem(order)) {
 				total += getTotal(order);

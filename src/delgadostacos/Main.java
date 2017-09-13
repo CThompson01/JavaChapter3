@@ -6,8 +6,7 @@ public class Main {
 		blankSpace(1);
 		Menu.drawMenu();
 		blankSpace(2);
-		double totalCost = Menu.getOrder();
-		System.out.println("Total cost: " + SalesTax.calculateSalesTax(totalCost));
+		System.out.println("Total cost: " + SalesTax.calculateSalesTax(Menu.getOrder()));
 	}
 
 	private static void blankSpace(int amount) {
